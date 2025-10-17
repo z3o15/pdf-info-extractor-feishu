@@ -1,7 +1,7 @@
 {
-    "app_id": "your_app_id_here",
-    "app_secret": "your_app_secret_here",
-    "app_token": "your_bitable_app_token_here",
-    "table_id": "your_table_id_here",
-    "upload_to_feishu": true
+  "app_id": "cli_a878a8c2fce91013",
+  "app_secret": "4baq3leW1uJjbDnD3xNlwdT6Gfo8rRSP",
+  "app_token": "Y78NbUOKxan5lEsRasvcTQhKnrc",
+  "table_id": "tblPPW3RTp0z1Jel",
+  "upload_to_feishu": true
 }
