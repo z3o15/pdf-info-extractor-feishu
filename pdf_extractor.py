@@ -150,8 +150,8 @@ def extract_pdf_info(pdf_path):
         
         # 清理摘要内容（移除Abstract标签本身及可能的冒号）
         if abstract_content.startswith("Abstract"):
-            # 移除"Abstract"和可能跟随的冒号、空格等
-            abstract_content = abstract_content[7:].strip()
+            # 移除"Abstract"（8个字符）和可能跟随的冒号、空格等
+            abstract_content = abstract_content[8:].strip()
             # 如果开头是冒号，继续移除
             if abstract_content.startswith(":"):
                 abstract_content = abstract_content[1:].strip()
