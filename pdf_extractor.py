@@ -148,9 +148,16 @@ def extract_pdf_info(pdf_path):
                 # 如果没有找到Key words，则提取到Abstract后的合理长度
                 abstract_content = text_content[abstract_start:abstract_start + 2000]
         
-        # 清理摘要内容（移除Abstract标签本身）
+        # 清理摘要内容（移除Abstract标签本身及可能的冒号）
         if abstract_content.startswith("Abstract"):
+            # 移除"Abstract"和可能跟随的冒号、空格等
             abstract_content = abstract_content[7:].strip()
+            # 如果开头是冒号，继续移除
+            if abstract_content.startswith(":"):
+                abstract_content = abstract_content[1:].strip()
+            # 如果开头是空格，继续移除
+            if abstract_content.startswith(" "):
+                abstract_content = abstract_content[1:].strip()
 
         # ====== 4. 分别修复简介与摘要格式 ======
         intro_content = fix_text_format(intro_content)
