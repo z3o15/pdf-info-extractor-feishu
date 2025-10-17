@@ -109,7 +109,6 @@ def extract_pdf_info(pdf_path):
 
         # ====== 6. 返回结果 ======
         return {
-            '文件名': os.path.basename(pdf_path),  # 添加文件名字段
             '简介': cleaned_text,  # 合并后的内容作为简介
             '摘要': abstract_content
         }
