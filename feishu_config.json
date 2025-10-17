@@ -1,0 +1,7 @@
+{
+    "app_id": "your_app_id_here",
+    "app_secret": "your_app_secret_here",
+    "app_token": "your_bitable_app_token_here",
+    "table_id": "your_table_id_here",
+    "upload_to_feishu": true
+}
